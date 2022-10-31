@@ -5,13 +5,14 @@ There are tasks that needs to be done on a daily/weekly/sprint basis, and **Jira
 
 After I have learnt basics of Python, I was looking for ways to use the knowledge acquired, and since Python is a general purpose programming language, I thought of automating some repetitive tasks and found Jira. 
 
+In this article, we will be looking on, how to automate some Jira tasks using Python. You can **use any software/language** to perform the same.
+
 Before proceeding further you need to **identify **whether you are using Jira on **Jira Cloud** or on your **company hosted** server. Company hosted Jira would typically have company name in the domain.
 
 I am using Jira on my company hosted server. Typically the URL would be 
 ```
 https://jiracompanydomain.com/browse/jiraid
 ```
-I have used Python to perform API calls, you can **use any software/language** to perform the same.
 
 Python code snippet for a simple GET request to fetch the given Jira Issue id related details.
 ```python
