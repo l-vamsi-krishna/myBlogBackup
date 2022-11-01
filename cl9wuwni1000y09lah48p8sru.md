@@ -1,15 +1,15 @@
 # Jira Automation
 
-Jira is the most common bug tracking tool used across software industry.
-There are tasks that needs to be done on a daily/weekly/sprint basis, and **Jira provides APIs** to the perform many actions on the **issue/user story**.
+Jira is the most common bug-tracking tool used across the software industry.
+There are tasks that need to be done on a daily/weekly/sprint basis, and **Jira provides APIs** to perform many actions on the **issue/user story**.
 
-After I have learnt basics of Python, I was looking for ways to use the knowledge acquired, and since Python is a general purpose programming language, I thought of automating some repetitive tasks and found Jira. 
+After I had learned the basics of Python, I was looking for ways to use the knowledge acquired. Since Python is a general-purpose programming language, I thought of automating some repetitive tasks and found Jira. 
 
-In this article, we will be looking on, how to automate some Jira tasks using Python. You can **use any software/language** to perform the same.
+In this article, we will be looking on, at how to automate some Jira tasks using Python. You can **use any software/language** to perform the same.
 
-Before proceeding further you need to **identify **whether you are using Jira on **Jira Cloud** or on your **company hosted** server. Company hosted Jira would typically have company name in the domain.
+Before proceeding further you need to **identify **whether you are using Jira on **Jira Cloud** or on your **company-hosted** server. Company-hosted Jira would typically have a company name in the domain.
 
-I am using Jira on my company hosted server. Typically the URL would be 
+I am using Jira on my company-hosted server. Typically the URL would be 
 ```
 https://jiracompanydomain.com/browse/jiraid
 ```
@@ -36,7 +36,7 @@ json_body={
 r = requests.post('https://companydomain.com/rest/api/2/issue/' + jira_id +'/comment', auth=auth,json=json_body)
 ```
 
-These are few examples that could be done. Personally I use around 6-7 endpoints to perform/automate my tasks, and exploring further more to see what could be automated.
+These are a few examples that could be done. Personally, I use around 6-7 endpoints to perform/automate my tasks and explore furthermore to see what could be automated.
 
 The most common actions which can be automated are: 
 - Fetch Jira issue details.
@@ -44,7 +44,7 @@ The most common actions which can be automated are:
 - Adding comments.
 - Adding Work log (Time Spent).
 - Attaching a file.
-- Creating Fisheye + Cruicible Reviews (Uses a different base URL)
+- Creating Fisheye + Crucible Reviews (Uses a different base URL)
 
 You can explore more on Jira APIs in the below links.
 
@@ -55,4 +55,4 @@ You can explore more on Jira APIs in the below links.
 I wish this would be helpful to automate at least some of your Jira tasks. 
 I would be glad to know if you can add any more to this.
 
-Thanks for your time. Until next time...
+What things did you automate in your life?
