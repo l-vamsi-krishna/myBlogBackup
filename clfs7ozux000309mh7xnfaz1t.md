@@ -20,7 +20,7 @@ Open [https://chat.openai.com](https://chat.openai.com/) and signup to create an
 
 Step 2: Generate API Key
 
-Open [https://beta.openai.com/account/api-keys](https://beta.openai.com/account/api-keys) , and create new secret key. Save the generated key.
+Open [https://beta.openai.com/account/api-keys](https://beta.openai.com/account/api-keys) , and create a new secret key. Save the generated key.
 
 Step 3: Configure OpenAI Connected System in Appian
 
@@ -28,15 +28,15 @@ Add the plugin (OpenAI) from Appian Admin Console.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1679983658942/ed49b1bb-6d7f-4f1b-a179-0ca98e8a2b13.png align="center")
 
-Once the plugin is deployed, Create new connected system, search and select OpenAI connected system.
+Once the plugin is deployed, Create a new connected system, search and select OpenAI connected system.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1679984442229/8894552b-f77a-49d0-b21a-f0c71396ec03.png align="center")
 
-Enter the API key generated from step 2. Organization field is optional and can be left blank and save the connected System.
+Enter the API key generated from step 2. The organization field is optional and can be left blank and save the connected System.
 
 Step 4: Create integration.
 
-Create integration object and select the OpenAI connected system created in step 3.
+Create an integration object and select the OpenAI connected system created in step 3.
 
 Select the Operation as "Open AI (Reads Data)" and select the Endpoint.
 
@@ -58,4 +58,4 @@ Save the changes and click "Test Request". You would get the response from chatG
 
 You can play around with different endpoints and different models.
 
-Other models can be found at [https://platform.openai.com/docs/models/gpt-3](https://platform.openai.com/docs/models/gpt-3). I will be using "text-curie-001" model as it faster and cheaper.
+Other models can be found at [https://platform.openai.com/docs/models/gpt-3](https://platform.openai.com/docs/models/gpt-3). I will be using "text-curie-001" model as it is faster and cheaper.
