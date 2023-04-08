@@ -16,9 +16,9 @@ In this article, we will discuss the steps to integrate Appian with Telegram.
 
 Step 1: Create a Telegram Bot
 
-A bot is a special type of account that can send and receive messages automatically. In Telegram search for BotFather, enter /start to start the conversation.
+A bot is a special type of account that can send and receive messages automatically. In Telegram search for BotFather, and enter /start to start the conversation.
 
-Enter /newbot, give a name for it(name will be displayed in the chat), and give a username which should end with "bot".
+Enter /newbot, give a name for it(the name will be displayed in the chat), and give a username which should end with "bot".
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680008273837/b24f2203-e206-4f87-b987-cfc7691a02aa.png align="center")
 
@@ -30,7 +30,7 @@ Search and send a message to the bot created above in Telegram.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680012836660/82da6ea6-c951-4986-99b0-8aafb0a479a0.png align="center")
 
-Create an Appian Integration object with below values.
+Create an Appian Integration object with the below values.
 
 URL input - [https://api.telegram.org/bot&lt;your-bot-API-key&gt;/getUpdates](https://api.telegram.org/bot1991219914:AAF92YPGD1sH_mResdZf5sjMNgbV_RJhGtg/getUpdates)
 
@@ -38,13 +38,13 @@ Method - GET
 
 Test the integration.
 
-Save the below highlighted id from the response, this is also called chat id and used to send the message.
+Save the below-highlighted id from the response, this is also called chat id and is used to send the message.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680012054250/1caf31fa-0790-49af-a1c1-931d7ace4a1c.png align="center")
 
-Step 3: Send message
+Step 3: Send a message
 
-Create another integration object with below values.
+Create another integration object with the below values.
 
 URL input - [https://api.telegram.org/bot&lt;your-bot-API-key&gt;/sendMessage](https://api.telegram.org/bot1991219914:AAF92YPGD1sH_mResdZf5sjMNgbV_RJhGtg/getUpdates)
 
@@ -58,7 +58,7 @@ chat\_id - id from step2
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680011530888/baaf93c2-e24c-49e4-870c-2e772cfb5ba8.png align="center")
 
-If the integration is working correctly, the message should be received in Telegram..
+If the integration is working correctly, the message should be received in Telegram.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680011667483/7c0eb6cb-da53-4f99-a29f-afcc3973e092.png align="center")
 
